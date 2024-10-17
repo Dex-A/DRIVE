@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-screen">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="monster-warning">
+            <p>CREAKING... DON'T STOP!</p>
+        </div>
+        <div id="distance-display">
+            Distance: <span id="distance">0</span> miles
+        </div>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h1>YOU STOPPED AND THE CREAKING GOT YOU!</h1>
+        <p id="final-distance">You drove: 0 miles</p>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

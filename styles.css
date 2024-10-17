@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+canvas {
+    background-color: black;
+}
+
+#monster-warning {
+    font-size: 28px;
+    color: darkred;
+    position: absolute;
+    top: 20px;
+    display: none;
+}
+
+#distance-display {
+    font-size: 28px;
+    position: absolute;
+    top: 60px;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: red;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
